@@ -2,8 +2,12 @@
   "name": "kenmarkdesign",
   "version": "1.0.0",
   "description": "Kenmark Design - Professional Printing & Publishing Services",
+  "main": "server.js",
   "scripts": {
-    "build": "echo 'Static site - no build needed'"
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   },
   "keywords": ["printing", "publishing", "design"],
   "author": "Kenmark Design",
