@@ -1,0 +1,11 @@
+{
+  "name": "kenmarkdesign",
+  "version": "1.0.0",
+  "description": "Kenmark Design - Professional Printing & Publishing Services",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": ["printing", "publishing", "design"],
+  "author": "Kenmark Design",
+  "license": "MIT"
+}
