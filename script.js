@@ -14,16 +14,24 @@ const CONFIG = {
     WHATSAPP_NUMBER: '256750850630', // Replace with actual WhatsApp number
     API_ENDPOINT: '/api', // Replace with actual API endpoint
     EMAIL_API: '/api/send-email', // Replace with actual email API endpoint
-    MAX_FILE_SIZE: 10 * 1024 * 1024, // 10MB in bytes
+    MAX_FILE_SIZE: 50 * 1024 * 1024, // 50MB in bytes (increased from 10MB)
     ALLOWED_FILE_TYPES: [
         'application/pdf',
         'image/jpeg',
         'image/jpg',
         'image/png',
+        'image/gif',
+        'image/bmp',
+        'image/tiff',
         'application/illustrator',
         'image/vnd.adobe.photoshop',
         'application/msword',
-        'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        'application/vnd.ms-excel',
+        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+        'application/zip',
+        'application/x-rar-compressed',
+        'application/postscript' // For AI files
     ],
     ANIMATION_DURATION: 300,
     DEBOUNCE_DELAY: 300,
@@ -434,7 +442,7 @@ class QuoteForm {
         Array.from(files).forEach(file => {
             // Validate file size
             if (file.size > CONFIG.MAX_FILE_SIZE) {
-                showToast(`File ${file.name} is too large. Maximum size is 10MB.`, 'error');
+                showToast(`File ${file.name} is too large. Maximum size is 50MB.`, 'error');
                 return;
             }
 
