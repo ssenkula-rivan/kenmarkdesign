@@ -2,6 +2,11 @@
  * KENMARK DESIGN - MAIN JAVASCRIPT
  * Professional Printing & Publishing Services
  * All functions follow best practices with proper error handling
+ * 
+ * ========================================
+ * Developed by: CRANICTECH
+ * Year: 2026
+ * ========================================
  */
 
 'use strict';

@@ -4,6 +4,10 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+// Developer: CRANICTECH
+// Website: Kenmark Design
+// Year: 2026
+
 // Increase payload size limit for file uploads
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
@@ -18,4 +22,6 @@ app.get('*', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+  console.log(`Developed by: CRANICTECH`);
+  console.log(`Project: Kenmark Design - Professional Printing & Publishing Services`);
 });
